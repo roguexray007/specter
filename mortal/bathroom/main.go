@@ -18,7 +18,7 @@ type Bathroom struct {
 	sync.Mutex
 	// cond is a rendezvous point for goroutines waiting for or announcing the occurence of an event
 	// an event is an arbitrary signal between two or more goroutines that carry no information other
-	// other than the face that it has occurred
+	// than the fact that it has occurred
 	signal *sync.Cond
 }
 

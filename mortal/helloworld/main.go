@@ -1,3 +1,6 @@
+// Synchronization primitives for sharing memory (mutex)
+// Synchronization via communicating (channels)
+
 package main
 
 import (
