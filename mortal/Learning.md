@@ -354,6 +354,8 @@ In Go, if you have two goroutines reading from the same channel, they compete fo
 
 If your requirement is that both Worker A and Worker B receive 1, 2, 3, 4, you cannot just share the channel. You need a "Tee" to split and duplicate the stream.
 
+>In Go, sending to or receiving from a nil channel is not an error and it doesn't panic. Instead, it blocks forever.
+
 1. The Theory of Ownership
 In a Tee pattern, the "Tee" function acts as a Splitter and Owner:
 
